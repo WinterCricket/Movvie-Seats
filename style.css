@@ -53,7 +53,7 @@ body {
 	border-top-right-radius: 10px;
 }
 
-/*
+
 .seat.selected{
 	background-color: green;
 }
@@ -83,4 +83,4 @@ body {
 
 .row {
 	display: flex;
-}*/
+}
