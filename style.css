@@ -14,9 +14,15 @@ body {
 	height: 100vh;
 	font-family: "Lato", sans-serif;
 	margin: 0;
-	font-size: 2em;
+	
 
 }
+
+
+
+/*.showcase{
+	font-size: 2em;
+}*/
 
 .film-container{
 	margin: 20px 0;
@@ -26,24 +32,28 @@ body {
 	background-color: #fff;
 	border: 0;
 	border-radius: 5px;
-	font-size: .75em;
+	font-size: 14px;
 	margin-left: 10px;
+	padding: 5px 15px 5px 15px;
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	padding: 5px 15px 5px 15px;
+	appearance: none;
+	
 }
+
+
 
 
 .seat {
 	background-color: #444451;
-	height: 15px;
-	width: 20px;
-	margin: 4px;
+	height: 12px;
+	width: 15px;
+	margin: 3px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
 
-
+/*
 .seat.selected{
 	background-color: green;
 }
@@ -63,7 +73,7 @@ body {
 
 .seat:not(.occupied):hover {
 	cursor: pointer;
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 
 .showcase.seat:not(.occupied):hover {
@@ -73,4 +83,4 @@ body {
 
 .row {
 	display: flex;
-}
+}*/
