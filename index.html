@@ -13,12 +13,73 @@
 			Choose a Film:
 		</label>
 		<select id="movie">
-			<option value="-4">Avatar</option>
-			<option value="5">Princess Bride</option>
-			<option value="10">Expanse: The Movie</option>
-			<option value="14">Breaking Bad: The Art Film</option>
+			<option value="-4">Avatar ($-4)</option>
+			<option value="5">Princess Bride ($5)</option>
+			<option value="10">Expanse: The Movie ($10)</option>
+			<option value="14">Breaking Bad: The Art Film ($14) </option>
 			</select
 		</div>
+		<ul class="showcase">
+			<li class="seat">
+				<small>empty</small>
+			</li>
+			<li class="seat selected">
+				<small>selected</small>
+			</li>
+			<li class="seat occupied">
+				<small>occupied</small>
+			</li>
 
+		</ul>
+
+		<div class="container">
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat occupied"></div>
+				<div class="seat occupied"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat occupied"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+			<div class="row">
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat occupied"></div>
+				<div class="seat occupied"></div>
+				<div class="seat occupied"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+			</div>
+			<div class="row">
+				<div class="seat occupied"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat"></div>
+				<div class="seat occupied"></div>
+			</div>
+		</div>
+		<p class="text" >You've selected <span id="count">0</span> seats for the price of $<span id="total">0</span>.</p> 
+		<script type="text/javascript" src="script.js"></script>
 	</body>
 	</html>
