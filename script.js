@@ -4,7 +4,7 @@ const count = document.getElementById("count");
 const total = document.getElementById("total");
 const filmSelect = document.getElementById("film");
 
-const ticketPrice = +film.value;
+let ticketPrice = +film.value;
 
 //functions
 function updateSelectedCount(){
@@ -14,7 +14,15 @@ function updateSelectedCount(){
 	total.innerText = selectedSeatsCount * ticketPrice;
 }
 
-//event
+
+//film select e
+
+filmSelect.addEventListener("change", (e)=> {
+	ticketPrice = +e.target.value;
+	updateSelectedCount();
+});
+
+// seat click event
 container.addEventListener("click", (e) => {
 	if(e.target.classList.contains("seat") && !e.target.classList.contains("occupied")){
 		e.target.classList.toggle("selected");
