@@ -10,7 +10,8 @@ const ticketPrice = +film.value;
 function updateSelectedCount(){
 	const selectedSeats = document.querySelectorAll(".row .seat.selected");
 	const selectedSeatsCount = selectedSeats.length;
-	console.log(selectedSeatsCount);
+	count.innerText = selectedSeatsCount;
+	total.innerText = selectedSeatsCount * ticketPrice;
 }
 
 //event
