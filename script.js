@@ -6,6 +6,9 @@ const filmSelect = document.getElementById("film");
 
 let ticketPrice = +film.value;
 
+//call populate function
+populateUI();
+
 //functions
 
 //setFilmData
@@ -30,6 +33,16 @@ function updateSelectedCount(){
 	total.innerText = selectedSeatsCount * ticketPrice;
 }
 
+//retrieve data from local storage and populate ui
+
+function populateUI(){
+	const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
+	if(selectedSeats !== null && selectedSeats > 0){
+		seats.forEach((seat, index) => {
+			
+		}
+	}
+}
 
 //film select e
 
