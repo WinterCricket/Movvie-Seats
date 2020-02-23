@@ -48,6 +48,11 @@ function populateUI(){
 			}	
 		});
 	}
+	const selectedFilmIndex = localStorage.getItem("selectedFilmIndex");
+
+	if(selectedFilmIndex !== null){
+		filmSelect.selectedIndex = selectedFilmIndex;
+	}
 }
 
 //film select e
