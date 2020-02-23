@@ -20,8 +20,13 @@ function setFilmData(filmIndex, filmPrice){
 //update and total count
 function updateSelectedCount(){
 	const selectedSeats = document.querySelectorAll(".row .seat.selected");
+	console.log(selectedSeats);
 
-	const seatsIndex = [...selectedSeats].map(seat =>[...seats].indexOf(seat));
+	const seatsIndex = [...selectedSeats].map(function (seat) {
+		return [...seats].indexOf(seat);
+	});
+
+	console.log(seatsIndex);
 
 	localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
 
@@ -40,7 +45,7 @@ function populateUI(){
 	if(selectedSeats !== null && selectedSeats > 0){
 		seats.forEach((seat, index) => {
 			
-		}
+		})
 	}
 }
 
